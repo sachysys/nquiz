@@ -10,5 +10,9 @@
   {
     "title": "History Quiz",
     "file": "history-quiz.json"
+  },
+  {
+    "title": "Olympics Quiz",
+    "file": "olympics-india.json"
   }
 ]
