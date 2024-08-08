@@ -1,14 +1,14 @@
 [
-    {
-      "title": "General Knowledge Quiz",
-      "file": "general-knowledge.json"
-    },
-    {
-      "title": "Science Quiz",
-      "file": "science-quiz.json"
-    },
-    {
-      "title": "History Quiz",
-      "file": "history-quiz.json"
-    }
-  ]
+  {
+    "title": "General Knowledge Quiz",
+    "file": "general-knowledge.json"
+  },
+  {
+    "title": "Science Quiz",
+    "file": "science-quiz.json"
+  },
+  {
+    "title": "History Quiz",
+    "file": "history-quiz.json"
+  }
+]
