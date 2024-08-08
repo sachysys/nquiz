@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #app {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        #quiz-selection, #quiz-container, #result-container {
+            display: none;
+        }
+        #quiz-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        #quiz-list li {
+            margin-bottom: 10px;
+        }
+        #question-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        #options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #e0e0e0;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d0d0d0;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        #next-btn {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        #next-btn:hover {
+            background-color: #45a049;
+        }
+        .selected {
+            background-color: #2196F3;
+            color: white;
+        }
+        #question-breakdown {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Quiz Application</h1>
+        <div id="quiz-selection">
+            <h2>Select a Quiz</h2>
+            <ul id="quiz-list"></ul>
+        </div>
+        <div id="quiz-container">
+            <h2 id="quiz-title"></h2>
+            <div id="question-container">
+                <p id="question-text"></p>
+            </div>
+            <div id="options-container"></div>
+            <button id="next-btn" disabled>Next</button>
+        </div>
+        <div id="result-container">
+            <h2>Quiz Results</h2>
+            <p id="total-questions"></p>
+            <p id="correct-answers"></p>
+            <p id="accuracy"></p>
+            <p id="time-taken"></p>
+            <h3>Question Breakdown:</h3>
+            <ul id="question-breakdown"></ul>
+        </div>
+    </div>
+    <script src="quiz-app.js"></script>
+</body>
+</html>
